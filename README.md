@@ -14,3 +14,5 @@ We can see all the Documents in index mylord via http://localhost:9200/mylord/_s
 Created Get requests to search for Documents according to the parameters passed by @RequestParam. (findByName, findOlderThan, findByAge queries used)
 
 Created also Get request to http://localhost:8080/persons/getall to see all added instances. Used personRepository.findAll(). 
+
+Updated the repository for microservices task (commit message = "d")
