@@ -21,9 +21,8 @@ public interface PersonRepository extends ElasticsearchRepository<Person, String
     @Query("{\"bool\" : {\"must\" : {\"match\" : {\"age\" : \"?0\"}}}}")
     List<Person> findByAge(int age);
 
-
-
-
+    @Query("{\"bool\" : {\"must\" : {\"match\" : {\"name\" : \"?0\"}}}")
+    int findage(String name);
 
 
 }

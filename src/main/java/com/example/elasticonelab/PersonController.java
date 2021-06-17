@@ -46,4 +46,11 @@ public class PersonController {
     }
 
 
+    @RequestMapping(value = "/findage", method = RequestMethod.GET)
+    public int findage(@RequestParam("name") String name){
+        return personRepository.findage(name);
+
+    }
+
+
 }
