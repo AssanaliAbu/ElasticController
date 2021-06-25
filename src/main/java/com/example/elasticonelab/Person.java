@@ -18,14 +18,18 @@ public class Person {
     private String id;
     private String name;
     private int age;
+    private String position;
+    private int salary;
 
     public Person(){
 
     }
 
-    public Person(String name, int age){
+    public Person(String name, int age, String position, int salary){
         this.name = name;
         this.age  = age;
+        this.position = position;
+        this.salary = salary;
     }
 
     public String getId() {

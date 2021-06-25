@@ -15,8 +15,8 @@ public class PersonController {
     private PersonRepository personRepository;
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public Person save(@RequestParam("name") String name, @RequestParam("age") int age){
-        Person newPerson =  new Person(name, age);
+    public Person save(@RequestParam("name") String name, @RequestParam("age") int age, @RequestParam("position") String position, @RequestParam("salary") int salary){
+        Person newPerson =  new Person(name, age, position, salary);
         newPerson = personRepository.save(newPerson);
         return newPerson;
     }
