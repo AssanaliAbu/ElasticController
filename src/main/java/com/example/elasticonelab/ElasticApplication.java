@@ -8,9 +8,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ElasticOneLabApplication {
+public class ElasticApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ElasticOneLabApplication.class, args);
+        SpringApplication.run(ElasticApplication.class, args);
     }
 
 }
